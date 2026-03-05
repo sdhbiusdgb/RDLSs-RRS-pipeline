@@ -1,0 +1,23 @@
+dataset:
+  dataset_name: "ExampleDataset"
+  raw_image_dir: "/path/to/raw_wsi_root"
+  CellAnnotation_dir: "/path/to/output_root"
+  data_type: "tif"
+  gpu_id: 0
+
+hovernet:
+  hovernet_infer_script: "/path/to/hovernet/run_infer.py"
+  model_path: "/path/to/hovernet_model.tar"
+  type_info_path: "/path/to/type_info.json"
+  model_mode: "fast"
+  nr_types: 6
+  batch_size: 1
+  mem_usage: 0.1
+
+pipeline:
+  tile_size: 1024
+  min_cells_for_features: 10
+
+io:
+  resolver: "simple"   # simple | named
+  slide_filename: "slide"

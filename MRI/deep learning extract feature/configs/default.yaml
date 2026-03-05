@@ -1,0 +1,19 @@
+model:
+  name: resnet
+  depth: 50
+  shortcut: B
+  num_seg_classes: 2  # kept for compatibility; not used for feature extraction
+
+input:
+  d: 14
+  h: 28
+  w: 28
+
+dataloader:
+  batch_size: 1
+  num_workers: 4
+  shuffle: true
+
+runtime:
+  device: cuda:0
+  seed: 42

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/
+build/
+dist/
+*.egg-info/
+outputs/
+*.pt
+*.nii
+*.nii.gz

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tile-anno-pipeline"
+version = "0.1.0"
+description = "De-identified tile-level cell annotation pipeline"
+requires-python = ">=3.9"
+
+[project.scripts]
+tile-anno = "tile_anno_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
